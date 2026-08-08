@@ -50,3 +50,38 @@ h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.15}
 .reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.show{opacity:1;transform:none}
 @media(max-width:900px){.nav{gap:12px}.service-grid,.place-grid{grid-template-columns:repeat(2,1fr)}.package-grid{grid-template-columns:1fr 1fr}.article-grid{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:720px){.menu-toggle{display:block}.nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 5%;box-shadow:0 15px 25px rgba(0,0,0,.08);flex-direction:column;align-items:flex-start}.nav.open{display:flex}.hero{min-height:680px}.hero-content{padding-top:90px}.two-col,.service-grid,.place-grid,.package-grid,.article-grid,.contact-grid{grid-template-columns:1fr}.section{padding:70px 0}.cta-inner{display:block}.cta .btn{margin-top:20px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.footer-inner{display:block}.footer-links{margin-top:25px;flex-wrap:wrap}.quick-info{gap:10px}}
+.promo-banner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.promo-banner a {
+  display: block;
+}
+
+.promo-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-banner img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .promo-banner {
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  .promo-banner img {
+    border-radius: 10px;
+  }
+}
