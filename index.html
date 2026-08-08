@@ -140,11 +140,11 @@
       <div class="form-grid">
         <label>Name<input id="name" required placeholder="Your name"></label>
         <label>Mobile<input id="mobile" required inputmode="tel" placeholder="Mobile number"></label>
-        <label>Service<select id="service"><option>Char Dham by Road</option><option>Char Dham by Helicopter</option><option>Taxi Booking</option><option>Hotel Booking</option><option>Flight Ticket Booking</option><option>Custom Tour</option></select></label>
+        <label>Service<select id="service"><option value="" selected disabled>Select Service</option><option>Char Dham by Road</option><option>Char Dham by Helicopter</option><option>Taxi Booking</option><option>Hotel Booking</option><option>Flight Ticket Booking</option><option>Custom Tour</option></select></label>
         <label>Travel Date<input id="date" type="date"></label>
-        <label>Adults<input id="adults" type="number" min="1" value="2"></label>
-        <label>Children<input id="children" type="number" min="0" value="0"></label>
-        <label class="full">Pickup Location<input id="pickup" placeholder="e.g. Haridwar / Dehradun"></label>
+        <label>Adults<input id="adults" type="number" min="1" ></label>
+        <label>Children<input id="children" type="number" min="0" ></label>
+    
         <label class="full">Message<textarea id="message" rows="4" placeholder="Tell us about your trip"></textarea></label>
       </div>
       <button class="btn primary full-btn" type="submit">Send Enquiry on WhatsApp</button>
