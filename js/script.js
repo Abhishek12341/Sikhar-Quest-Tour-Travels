@@ -29,7 +29,7 @@ form?.addEventListener("submit",e=>{
   const date=document.getElementById("date").value||"Not specified";
   const adults=document.getElementById("adults").value||"0";
   const children=document.getElementById("children").value||"0";
-  const pickup=document.getElementById("pickup").value.trim()||"Not specified";
+  
   const message=document.getElementById("message").value.trim()||"No additional message";
   const text=`Hello Sikhar Quest Tour & Travels,
 
@@ -41,9 +41,23 @@ Service: ${service}
 Travel Date: ${date}
 Adults: ${adults}
 Children: ${children}
-Pickup: ${pickup}
+
 Message: ${message}
 
 Please share the best available options/quotation.`;
   window.open("https://wa.me/919389763167?text="+encodeURIComponent(text),"_blank");
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("promoPopup");
+  const closeBtn = document.getElementById("promoClose");
+
+  if (popup && closeBtn) {
+    setTimeout(() => {
+      popup.style.display = "flex";
+    }, 1200);
+
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  }
 });
