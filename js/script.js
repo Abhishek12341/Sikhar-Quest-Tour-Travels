@@ -45,5 +45,5 @@ Pickup: ${pickup}
 Message: ${message}
 
 Please share the best available options/quotation.`;
-  window.open("https://wa.me/91939763167?text="+encodeURIComponent(text),"_blank");
+  window.open("https://wa.me/919389763167?text="+encodeURIComponent(text),"_blank");
 });
